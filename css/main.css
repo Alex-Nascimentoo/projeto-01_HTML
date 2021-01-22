@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+html, body{
+    height: 100%;
+}
+/* classes auxiliares */
+.center{
+    margin: 0 auto;
+    max-width: 980px;
+    padding: 0 2%;
+}
+.clear{
+    clear: both;
+}
+/* * */
+.layer{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+}
+section.main{
+    position: relative;
+    background-image: url('../img/porsche.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 15px 0;
+    min-height: 650px;
+}
+section.main header{
+    position: relative;
+    z-index: 2;
+    border-bottom: 1px solid #ffffff;
+}
+.icons-social{
+    float: right;
+}
+.icons-social a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 15px;
+}
+.logo{
+    margin-top: 10px;
+    padding-bottom: 10px;
+    color: #ffffff;
+    float: left;
+    font-size: 30px;
+    font-size: bold;
+    cursor: pointer;
+}
+.desktop{
+    margin-top: 20px;
+    float: right;
+}
+.desktop ul{
+    list-style-type: none;
+}
+.desktop li{
+    font-size: 17px;
+    display: inline-block;
+    margin: 0 15px;
+}
+.desktop a{
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.desktop a:hover{
+    color: #ff6600;
+    border-top: 1px solid #e65c00;
+}
+.conteudo-header{
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    margin: 70px 0;
+}
+.conteudo-header h2{
+    color: white;
+        font-size: 44px;
+        font-weight: lighter;
+}
+.conteudo-header span{
+    color: #ff6600;
+}
+.conteudo-header p{
+    color: white;
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: lighter;
+}
+.conteudo-header a{
+    display: block;
+    width: 177px;
+    height: 44px;
+    background: #e65c00;
+    color: white;
+    text-align: center;
+    line-height: 44px;
+    text-decoration: none;
+    margin-top: 15px;
+    border-radius: 22px;
+}
+.linha-sobre{
+    width: 100%;
+    text-align: center;
+    background-color: #303030;
+    padding: 10px 2% 20px 2%;
+}
+.linha-sobre h2{
+    color: #e65c00;
+    font-weight: lighter;
+    font-size: 25px;
+    width: 230px;
+    margin:0 auto 10px auto;    
+}
+.linha-sobre > .center{
+    border-bottom: 1px solid #e65c00;
+}
+.box-single{
+    width: 32%;
+    padding:0 20px;
+}
+.box-single h2{
+    background: #ff6600;
+    padding-bottom: 7px;
+    color: white;
+    font-weight: lighter;
+    text-align: center;
+}
+.box-single p{
+    margin-top: 5px;
+}
+.boxes-sobre{
+    padding:10px 0 40px;
+    background: #303030;
+}
+.boxes-sobre > .center{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box-wraper{
+    width:100%;
+    background: white;
+    text-align: center;
+}
+.pontos-box{
+    padding:10px 5px 0 5px;
+    color: #303030;
+}
+.pontos-box i{
+    padding-right: 5px;
+}
+.box-botao{
+    width: 100%;
+    text-align: center;
+    padding:30px 0 20px
+}
+.box-botao a{
+    display: block;
+    background: #e65c00;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    text-decoration: none;
+    font-weight: lighter;
+    margin: 0 auto; 
+    border-radius:20px;
+}
+.parallax{
+    width: 100%;
+    position: relative;
+    background-image: url('../img/farol-r8.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 300px;
+    color: white;
+    font-weight: lighter;
+}
+.parallax .center{
+    position: relative;
+    z-index: 2;
+}
+.parallax .center h2{
+    font-weight: lighter;
+    padding: 20px 0;
+}
+.overlay-parallax{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(20,20,20,0.9);
+}
+.contato{
+    padding: 40px 0 ;
+    background: #303030;
+    /* font-weight: lighter; */
+    color: white    ;
+}
+.descricao-usuario-box{
+    color: #C0C0C0;
+    padding-top: 15px;
+}
+.contato h2{
+    font-weight: lighter;
+}
+.contato h2 > .borda-efeito{
+    width:50px;
+    height: 2px;
+    position: absolute;
+    background: #e65c00;
+    transition: 0.4s;
+}
+.contato h2:hover > .borda-efeito{
+    width: 100px;
+}
+.w50{
+    float: left;
+    width: 50%;
+    padding: 0 15px;
+}
+.email{
+    padding: 0;
+}
+.email form{
+    padding-top: 15px;
+}
+.email input:not([type="submit"]){
+    width: 100%;
+    margin: 5px auto;
+}
+.email textarea{
+    width: 100%;
+    height: 180px;
+    margin-top: 2.5px;
+    resize: vertical;
+}
+.email input[type="submit"]{
+    background: #e65c00;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+.time{
+    padding: 10px auto;
+}
+.time .w50{
+    width: 48%;
+    margin: 20px 1%;
+}
+.equipe-single{
+    border: 1px solid #686868;
+    min-height: 280px;
+    padding: 10px 8px;
+}
+
+.equipe-single .box-avatar{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url('../img/ft-perfil.png');
+    background-size: contain;
+}
+.equipe-single .topo-box-usuario{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #C0C0C0;
+}
+.box-avatar{
+    vertical-align: middle;
+}
+.info-usuario{
+    padding: 10px 0 0 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.footer{
+    text-align: center;
+    background: #ff6600;
+    color: white;
+    font-weight: lighter;
+    height: 35px;
+    line-height: 35px;
+}
+@media screen and (max-width:  768px){
+        .box-single{
+            width: 100%;
+            margin-top: 30px;
+        }
+        .w50{
+            width: 100%;
+            margin-bottom: 50px;
+        }
+}
